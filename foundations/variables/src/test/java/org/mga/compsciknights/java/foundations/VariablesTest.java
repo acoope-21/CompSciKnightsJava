@@ -18,6 +18,10 @@ class VariablesTest {
         log.info("START verifying the Variables default constructor");
         Variables variables = new Variables();
 
+        String example = "give it a value of a string";
+        variables.setaString(example);
+        
+
         assertThat(
                 "Default value for aString", variables.getaString(),
                 equalTo("this is a string.")
